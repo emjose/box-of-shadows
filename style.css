@@ -356,10 +356,6 @@ button:active {
 /* ------------------------------------------------------------- */
 /* GitHub Corner */
 
-.github-corner {
-	display: none;
-}
-
 .github-corner:focus svg path {
 	fill: var(--github-focus);
 }
