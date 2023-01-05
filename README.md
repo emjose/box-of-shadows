@@ -4,8 +4,7 @@
     <tr>
         <td><a href="https://github.com/emjose/eye-onic-reading/#header"><img src="https://res.cloudinary.com/dn1e07eul/image/upload/v1659330996/Readme%20Headers/header-left_ctkix5.png" alt="previous" style="width: 200px;"/></a></td>
         <td><a href="https://github.com/emjose/one-hundred/#header"><img src="https://res.cloudinary.com/dn1e07eul/image/upload/v1659330606/Readme%20Headers/header-center_bkbdbt.png" alt="100 days of code" style="width: 580px;"/></a></td>
-        <td><a href="https://github.com/emjose/box-of-shadows/#header"><img src="https://res.cloudinary.com/dn1e07eul/image/upload/v1659332117/Readme%20Headers/header-right-g_zhy4gl.png" alt="next" style="width: 200px;"/></a></td>
-        <!-- <td><a href="https://github.com/emjose/****NEXT-REPO****/#header"><img src="https://res.cloudinary.com/dn1e07eul/image/upload/v1659330646/Readme%20Headers/header-right_eftaz9.png" alt="next" style="width: 200px;"/></a></td> -->
+        <td><a href="https://github.com/emjose/candy-cocoa/#header"><img src="https://res.cloudinary.com/dn1e07eul/image/upload/v1659330646/Readme%20Headers/header-right_eftaz9.png" alt="next" style="width: 200px;"/></a></td>
     </tr>
 </table>
 
@@ -25,12 +24,12 @@
 
 <a href=#table-of-contents>![Table of Contents](https://res.cloudinary.com/dn1e07eul/image/upload/v1659241355/Readme%20Headers/inter-toc_euxbbw.png)</a>
 
--   [100 Days of Code](#100days)
--   [Installation](#installation)
--   [Live Site](#live-site)
--   [Improvement](#improvement)
--   [Resources](#resources)
--   [Let's Connect!](#lets-connect)
+- [100 Days of Code](#100days)
+- [Installation](#installation)
+- [Live Site](#live-site)
+- [Improvement](#improvement)
+- [Resources](#resources)
+- [Let's Connect!](#lets-connect)
 
 <br>
 
@@ -42,21 +41,21 @@
 
 ### Day 38: October 3, 2022
 
--   The **[The Box of Shadows](https://box-of-shadows.vercel.app/)** is a CSS box shadow generator, adapted from two tutorials:
+- The **[The Box of Shadows](https://box-of-shadows.vercel.app/)** is a CSS box shadow generator, adapted from two tutorials:
 
-    -   [Box Shadow Generator](https://youtu.be/9WZ4ajDNmrU)
+  - [Box Shadow Generator](https://youtu.be/9WZ4ajDNmrU)
 
-    -   [JavaScript 30: CSS Variables](https://youtu.be/0pGnaanQNF8)
+  - [JavaScript 30: CSS Variables](https://youtu.be/0pGnaanQNF8)
 
--   Together, the lessons taught me about the efficacy of [CSS variables](https://css-tricks.com/difference-between-types-of-css-variables/) and [HTMLElement datasets](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset) in dynamically rendering elements with JavaScript.
+- Together, the lessons taught me about the efficacy of [CSS variables](https://css-tricks.com/difference-between-types-of-css-variables/) and [HTMLElement datasets](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset) in dynamically rendering elements with JavaScript.
 
--   Functionality was extended with the following:
+- Functionality was extended with the following:
 
-    -   [Clipboard.js](https://clipboardjs.com/) implementation
+  - [Clipboard.js](https://clipboardjs.com/) implementation
 
-    -   Accessibility and installability as a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+  - Accessibility and installability as a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 
-    -   Ability to change theme, multiple color inputs, and reset code
+  - Ability to change theme, multiple color inputs, and reset code
 
 <br>
 
@@ -170,15 +169,15 @@ Users can switch between light or dark mode, with preference saved to local stor
 
 **There are a number of areas of improvement for [The Box of Shadows](https://box-of-shadows.vercel.app/):**
 
--   Option for box shadow opacity.
+- Option for box shadow opacity.
 
--   Option for multiple box shadow layers.
+- Option for multiple box shadow layers.
 
--   Option to copy CSS lines for body or box color properties.
+- Option to copy CSS lines for body or box color properties.
 
--   Custom shadow values persisting on refresh, and persisting between light and dark modes.
+- Custom shadow values persisting on refresh, and persisting between light and dark modes.
 
--   Maintain automatic contrast and legibility for text, buttons, and slider ranges when box color is changed.
+- Maintain automatic contrast and legibility for text, buttons, and slider ranges when box color is changed.
 
 <br>
 
@@ -188,31 +187,31 @@ Users can switch between light or dark mode, with preference saved to local stor
 
 <a href=#resources>![Resources](https://res.cloudinary.com/dn1e07eul/image/upload/v1659314247/Readme%20Headers/inter-resources_ncevbw.png)</a>
 
--   #### [Cloudinary](https://cloudinary.com/)
+- #### [Cloudinary](https://cloudinary.com/)
 
--   #### [Clipboard.js](https://clipboardjs.com/)
+- #### [Clipboard.js](https://clipboardjs.com/)
 
--   #### [Adobe Fonts](https://fonts.adobe.com/)
+- #### [Adobe Fonts](https://fonts.adobe.com/)
 
--   #### [JavaScript30](https://javascript30.com/)
+- #### [JavaScript30](https://javascript30.com/)
 
--   #### [Adobe Photoshop](https://www.adobe.com/creativecloud/buy/students.html)
+- #### [Adobe Photoshop](https://www.adobe.com/creativecloud/buy/students.html)
 
--   #### [Box Shadow Generator](https://youtu.be/9WZ4ajDNmrU)
+- #### [Box Shadow Generator](https://youtu.be/9WZ4ajDNmrU)
 
--   #### [Update CSS Variables with JS](https://www.youtube.com/watch?v=AHLNzv13c2I)
+- #### [Update CSS Variables with JS](https://www.youtube.com/watch?v=AHLNzv13c2I)
 
--   #### [Design A CSS Box Shadow Generator](https://youtu.be/xuMiyI-hPV4)
+- #### [Design A CSS Box Shadow Generator](https://youtu.be/xuMiyI-hPV4)
 
--   #### [The simplest CSS variable dark mode theme](https://lukelowrey.com/css-variable-theme-switcher/)
+- #### [The simplest CSS variable dark mode theme](https://lukelowrey.com/css-variable-theme-switcher/)
 
--   #### [Stack Overflow: Styling input`[type="color"]`](https://stackoverflow.com/questions/11167281/webkit-css-to-control-the-box-around-the-color-in-an-inputtype-color)
+- #### [Stack Overflow: Styling input`[type="color"]`](https://stackoverflow.com/questions/11167281/webkit-css-to-control-the-box-around-the-color-in-an-inputtype-color)
 
--   #### [Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
+- #### [Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
 
--   #### [What is the difference between CSS variables and preprocessor variables?](https://css-tricks.com/difference-between-types-of-css-variables/)
+- #### [What is the difference between CSS variables and preprocessor variables?](https://css-tricks.com/difference-between-types-of-css-variables/)
 
--   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
+- #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
 
 <br>
 
