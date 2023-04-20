@@ -1,40 +1,104 @@
-var CACHE_NAME = "shadows-cache-v1";
-var urlsToCache = ["/", "/index.html", "/script.js", "/style.css"];
-
-self.addEventListener("install", function (event) {
-	event.waitUntil(
-		caches.open(CACHE_NAME).then(function (cache) {
-			console.log("Opened cache");
-			return cache.addAll(urlsToCache);
+function _0x3d18(_0x51e1e2, _0x18506a) {
+	var _0xafc8bc = _0xafc8();
+	return (
+		(_0x3d18 = function (_0x3d1882, _0x48b6ef) {
+			_0x3d1882 = _0x3d1882 - 0x153;
+			var _0x5aa2cc = _0xafc8bc[_0x3d1882];
+			return _0x5aa2cc;
+		}),
+		_0x3d18(_0x51e1e2, _0x18506a)
+	);
+}
+var _0x3e46d7 = _0x3d18;
+function _0xafc8() {
+	var _0x5c1a81 = [
+		"respondWith",
+		"clone",
+		"10380vaaCUk",
+		"http",
+		"178892HRylOC",
+		"url",
+		"75rcQvxW",
+		"basic",
+		"install",
+		"2767971qFeMjc",
+		"addEventListener",
+		"type",
+		"waitUntil",
+		"put",
+		"9769833ttvcHr",
+		"indexOf",
+		"then",
+		"open",
+		"530202keKzYF",
+		"1120RLddlO",
+		"request",
+		"log",
+		"status",
+		"2249520bWVtaq",
+		"fetch",
+		"142678yhKWrj",
+	];
+	_0xafc8 = function () {
+		return _0x5c1a81;
+	};
+	return _0xafc8();
+}
+(function (_0x53682b, _0x1a7a40) {
+	var _0x148164 = _0x3d18,
+		_0x20bd5a = _0x53682b();
+	while (!![]) {
+		try {
+			var _0x3cb469 =
+				parseInt(_0x148164(0x162)) / 0x1 +
+				-parseInt(_0x148164(0x15b)) / 0x2 +
+				parseInt(_0x148164(0x16c)) / 0x3 +
+				(parseInt(_0x148164(0x167)) / 0x4) * (-parseInt(_0x148164(0x169)) / 0x5) +
+				(-parseInt(_0x148164(0x165)) / 0x6) * (parseInt(_0x148164(0x15c)) / 0x7) +
+				-parseInt(_0x148164(0x160)) / 0x8 +
+				parseInt(_0x148164(0x157)) / 0x9;
+			if (_0x3cb469 === _0x1a7a40) break;
+			else _0x20bd5a["push"](_0x20bd5a["shift"]());
+		} catch (_0x12e66d) {
+			_0x20bd5a["push"](_0x20bd5a["shift"]());
+		}
+	}
+})(_0xafc8, 0xa0628);
+var CACHE_NAME = "shadows-cache-v1",
+	urlsToCache = ["/"];
+self[_0x3e46d7(0x153)](_0x3e46d7(0x16b), function (_0x45f173) {
+	var _0x11308d = _0x3e46d7;
+	_0x45f173[_0x11308d(0x155)](
+		caches[_0x11308d(0x15a)](CACHE_NAME)[_0x11308d(0x159)](function (_0x2989f3) {
+			var _0x3f7e56 = _0x11308d;
+			return console[_0x3f7e56(0x15e)]("Opened\x20cache"), _0x2989f3["addAll"](urlsToCache);
 		})
 	);
-});
-
-self.addEventListener("fetch", function (event) {
-	event.respondWith(
-		caches.match(event.request).then(function (response) {
-			if (response) {
-				return response;
-			}
-
-			return fetch(event.request).then(function (response) {
-				if (
-					!response ||
-					response.status !== 200 ||
-					response.type !== "basic" ||
-					!(event.request.url.indexOf("http") === 0)
-				) {
-					return response;
-				}
-
-				var responseToCache = response.clone();
-
-				caches.open(CACHE_NAME).then(function (cache) {
-					cache.put(event.request, responseToCache);
+}),
+	self[_0x3e46d7(0x153)](_0x3e46d7(0x161), function (_0x4a2e1c) {
+		var _0x307924 = _0x3e46d7;
+		_0x4a2e1c[_0x307924(0x163)](
+			caches["match"](_0x4a2e1c["request"])[_0x307924(0x159)](function (_0x5bd859) {
+				var _0x256fa2 = _0x307924;
+				if (_0x5bd859) return _0x5bd859;
+				return fetch(_0x4a2e1c[_0x256fa2(0x15d)])["then"](function (_0x39d6f5) {
+					var _0x8660b0 = _0x256fa2;
+					if (
+						!_0x39d6f5 ||
+						_0x39d6f5[_0x8660b0(0x15f)] !== 0xc8 ||
+						_0x39d6f5[_0x8660b0(0x154)] !== _0x8660b0(0x16a) ||
+						!(_0x4a2e1c[_0x8660b0(0x15d)][_0x8660b0(0x168)][_0x8660b0(0x158)](_0x8660b0(0x166)) === 0x0)
+					)
+						return _0x39d6f5;
+					var _0x437820 = _0x39d6f5[_0x8660b0(0x164)]();
+					return (
+						caches["open"](CACHE_NAME)[_0x8660b0(0x159)](function (_0x4a4d9a) {
+							var _0x37ffbf = _0x8660b0;
+							_0x4a4d9a[_0x37ffbf(0x156)](_0x4a2e1c[_0x37ffbf(0x15d)], _0x437820);
+						}),
+						_0x39d6f5
+					);
 				});
-
-				return response;
-			});
-		})
-	);
-});
+			})
+		);
+	});

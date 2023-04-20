@@ -1,179 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:title" content="The Box of Shadows" />
+		<meta property="og:image" content="https://box-of-shadows.vercel.app//Assets/meta-038-box-of-shadows.png" />
+		<meta property="og:image:alt" content="A box shadow generator app. Click to visit website." />
+		<meta property="og:description" content="Project by Emmanuel Jose" />
+		<meta property="og:url" content="https://box-of-shadows.vercel.app/" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="description" content="A CSS box shadow generator app. Click to visit website." />
+		<meta name="theme-color" content="#e33afc" />
+		<meta name="keywords" content="HTML, JavaScript, CSS, box shadow, generator" />
+		<meta name="author" content="Emmanuel Jose" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Box of Shadows</title>
+		<link rel="icon" type="image/png" href="Assets/emmanuel-jose.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png" />
+		<link rel="manifest" href="manifest.webmanifest" />
+		<link rel="canonical" href="https://box-of-shadows.vercel.app/" />
+		<script src="scripts.js"></script>
+	</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="The Box of Shadows" />
-        <meta property="og:image" content="https://box-of-shadows.vercel.app//Assets/meta-038-box-of-shadows.png" />
-        <meta property="og:image:alt" content="A box shadow generator app. Click to visit website." />
-        <meta property="og:description" content="Project by Emmanuel Jose" />
-        <meta property="og:url" content="https://box-of-shadows.vercel.app/" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="description" content="A CSS box shadow generator app. Click to visit website." />
-        <meta name="theme-color" content="#e33afc" />
-        <meta name="keywords" content="HTML, JavaScript, CSS, box shadow, generator" />
-        <meta name="author" content="Emmanuel Jose" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>The Box of Shadows</title>
-        <link rel="icon" type="image/png" href="Assets/emmanuel-jose.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png" />
-        <link rel="manifest" href="manifest.webmanifest" />
-        <link rel="stylesheet" href="https://use.typekit.net/jkq4qny.css">
-        <link rel="canonical" href="https://box-of-shadows.vercel.app/" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
+	<body>
+		<div class="box" id="main-box">
+			<h1>The Box of Shadows</h1>
 
-    <body>
+			<div class="controls">
+				<!-- Circular Color Inputs -->
 
-        <div class="box" id="main-box">
+				<div id="color-container">
+					<!-- Body Color Input -->
 
-            <h1>The Box of Shadows</h1>
+					<div class="control" data-theme="light" id="body-color-div-1">
+						<input type="color" name="body-bg-color" id="body-color-input-1" value="#e33afc" />
+						<label class="color-label" for="body-color-input-1">Body Color</label>
+					</div>
 
-            <div class="controls">
+					<div class="control" data-theme="dark" id="body-color-div-2">
+						<input type="color" name="body-bg-color" id="body-color-input-2" value="#161616" />
+						<label class="color-label" for="body-color-input-2">Body Color</label>
+					</div>
 
-                <!-- Circular Color Inputs -->
+					<!-- Shadow Color Input -->
 
-                <div id="color-container">
+					<div class="control" data-theme="light" id="shadow-color-div-1">
+						<input type="color" name="color" id="shadow-color-input-1" value="#16001a" data-suffix=";" />
+						<label class="color-label" for="shadow-color-input-1">Shadow Color</label>
+					</div>
 
-                    <!-- Body Color Input -->
+					<div class="control" data-theme="dark" id="shadow-color-div-2">
+						<input type="color" name="color" id="shadow-color-input-2" value="#55006c" data-suffix=";" />
+						<label class="color-label" for="shadow-color-input-2">Shadow Color</label>
+					</div>
 
-                    <div class="control" data-theme="light" id="body-color-div-1">
-                        <input type="color" name="body-bg-color" id="body-color-input-1" value="#e33afc" />
-                        <label class="color-label" for="body-color-input-1">Body Color</label>
-                    </div>
+					<!-- Box Color Input -->
 
-                    <div class="control" data-theme="dark" id="body-color-div-2">
-                        <input type="color" name="body-bg-color" id="body-color-input-2" value="#161616" />
-                        <label class="color-label" for="body-color-input-2">Body Color</label>
-                    </div>
+					<div class="control" data-theme="light" id="box-color-div-1">
+						<input type="color" name="box-bg-color" id="box-color-input-1" value="#ffffff" />
+						<label class="color-label" for="box-color-input-1">Box Color</label>
+					</div>
 
-                    <!-- Shadow Color Input -->
+					<div class="control" data-theme="dark" id="box-color-div-2">
+						<input type="color" name="box-bg-color" id="box-color-input-2" value="#262225" />
+						<label class="color-label" for="box-color-input-2">Box Color</label>
+					</div>
+				</div>
 
-                    <div class="control" data-theme="light" id="shadow-color-div-1">
-                        <input type="color" name="color" id="shadow-color-input-1" value="#16001a" data-suffix=";" />
-                        <label class="color-label" for="shadow-color-input-1">Shadow Color</label>
-                    </div>
+				<!-- Inset Checkbox -->
 
-                    <div class="control" data-theme="dark" id="shadow-color-div-2">
-                        <input type="color" name="color" id="shadow-color-input-2" value="#55006c" data-suffix=";" />
-                        <label class="color-label" for="shadow-color-input-2">Shadow Color</label>
-                    </div>
+				<div class="control">
+					<label for="inset">Inset</label>
+					<input id="inset" type="checkbox" name="inset" value="" />
+				</div>
 
-                    <!-- Box Color Input -->
+				<!-- Horizontal Offset Range -->
 
-                    <div class="control" data-theme="light" id="box-color-div-1">
-                        <input type="color" name="box-bg-color" id="box-color-input-1" value="#ffffff" />
-                        <label class="color-label" for="box-color-input-1">Box Color</label>
-                    </div>
+				<div class="control">
+					<div class="d-flex">
+						<label for="horizontal-range">Horizontal Offset:</label>
+						<span name="x" id="x-span">20px</span>
+					</div>
+					<input
+						class="range"
+						type="range"
+						id="horizontal-range"
+						name="x"
+						max="200"
+						min="-200"
+						value="20"
+						data-suffix="px"
+					/>
+				</div>
 
-                    <div class="control" data-theme="dark" id="box-color-div-2">
-                        <input type="color" name="box-bg-color" id="box-color-input-2" value="#262225" />
-                        <label class="color-label" for="box-color-input-1">Box Color</label>
-                    </div>
+				<!-- Vertical Offset Range -->
 
-                </div>
+				<div class="control">
+					<div class="d-flex">
+						<label for="vertical-range">Vertical Offset:</label>
+						<span name="y" id="y-span">20px</span>
+					</div>
+					<input
+						class="range"
+						type="range"
+						id="vertical-range"
+						name="y"
+						max="200"
+						min="-200"
+						value="20"
+						data-suffix="px"
+					/>
+				</div>
 
-                <!-- Inset Checkbox -->
+				<!-- Blur Radius Range -->
 
-                <div class="control">
-                    <label for="inset">Inset</label>
-                    <input id="inset" type="checkbox" name="inset" value="" />
-                </div>
+				<div class="control">
+					<div class="d-flex">
+						<label for="blur-range">Blur Radius:</label>
+						<span name="blur" id="blur-span">0px</span>
+					</div>
+					<input class="range" type="range" id="blur-range" name="blur" max="200" min="0" value="0" data-suffix="px" />
+				</div>
 
-                <!-- Horizontal Offset Range -->
+				<!-- Spread Radius Range -->
 
-                <div class="control">
-                    <div class="d-flex">
-                        <label for="horizontal-range">Horizontal Offset:</label>
-                        <span name="x" id="x-span">20px</span>
-                    </div>
-                    <input class="range" type="range" id="horizontal-range" name="x" max="200" min="-200" value="20"
-                        data-suffix="px" />
-                </div>
+				<div class="control">
+					<div class="d-flex">
+						<label for="spread-range">Spread Radius:</label>
+						<span name="spread" id="spread-span">0px</span>
+					</div>
+					<input
+						class="range"
+						type="range"
+						id="spread-range"
+						name="spread"
+						max="200"
+						min="0"
+						value="0"
+						data-suffix="px"
+					/>
+				</div>
+			</div>
 
-                <!-- Vertical Offset Range -->
+			<!-- CSS Code Lines -->
 
-                <div class="control">
-                    <div class="d-flex">
-                        <label for="vertical-range">Vertical Offset:</label>
-                        <span name="y" id="y-span">20px</span>
-                    </div>
-                    <input class="range" type="range" id="vertical-range" name="y" max="200" min="-200" value="20"
-                        data-suffix="px" />
-                </div>
+			<div id="code" class="css-code">
+				<p id="first"><span>-webkit-box-shadow:</span></p>
+				<p id="second"><span>-moz-box-shadow:</span></p>
+				<p id="third"><span>box-shadow:</span></p>
+			</div>
 
-                <!-- Blur Radius Range -->
+			<!-- Bottom Buttons -->
 
-                <div class="control">
-                    <div class="d-flex">
-                        <label for="blur-range">Blur Radius:</label>
-                        <span name="blur" id="blur-span">0px</span>
-                    </div>
-                    <input class="range" type="range" id="blur-range" name="blur" max="200" min="0" value="0"
-                        data-suffix="px" />
-                </div>
+			<div id="button-container">
+				<button id="reset-button" onclick="resetValues()" aria-label="reset">Reset</button>
+				<button id="copy-button" data-clipboard-target="#code" class="copy" aria-label="copy CSS">Copy CSS</button>
+				<button id="theme-toggle" onclick="switchMode()" aria-label="switch to light or dark mode"></button>
+			</div>
+		</div>
 
-                <!-- Spread Radius Range -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+		<script src="script.js"></script>
+	</body>
 
-                <div class="control">
-                    <div class="d-flex">
-                        <label for="spread-range">Spread Radius:</label>
-                        <span name="spread" id="spread-span">0px</span>
-                    </div>
-                    <input class="range" type="range" id="spread-range" name="spread" max="200" min="0" value="0"
-                        data-suffix="px" />
-                </div>
-
-            </div>
-
-            <!-- CSS Code Lines -->
-
-            <div id="code" class="css-code">
-                <p id="first"><span>-webkit-box-shadow:</span></p>
-                <p id="second"><span>-moz-box-shadow:</span></p>
-                <p id="third"><span>box-shadow:</span></p>
-            </div>
-
-            <!-- Bottom Buttons -->
-
-            <div id="button-container">
-                <button id="reset-button" onclick="resetValues()" aria-label="reset">Reset</button>
-                <button id="copy-button" data-clipboard-target="#code" class="copy" aria-label="copy CSS">Copy
-                    CSS</button>
-                <button id="theme-toggle" onclick="switchMode()" aria-label="switch to light or dark mode"></button>
-            </div>
-
-        </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
-        <script src="script.js"></script>
-    </body>
-
-    <div class="overlay">
-        <a href="https://github.com/emjose/box-of-shadows/#header" target="_blank" rel="noopener noreferrer"
-            class="github-corner" title="View source on GitHub" aria-label="View source on GitHub"><svg width="80"
-                height="80" viewBox="0 0 250 250" style="
-                        fill: var(--github-fill);
-                        color: var(--github-color);
-                        position: absolute;
-                        top: 0;
-                        border: 0;
-                        right: 0;
-                        " aria-hidden="true">
-                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                <path
-                    d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-                    fill="currentColor" style="transform-origin: 130px 106px" class="octo-arm"></path>
-                <path
-                    d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-                    fill="currentColor" class="octo-body"></path>
-            </svg>
-        </a>
-    </div>
-
+	<div class="overlay">
+		<a
+			href="https://github.com/emjose/box-of-shadows/#header"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="github-corner"
+			title="View source on GitHub"
+			aria-label="View source on GitHub"
+			><svg
+				width="80"
+				height="80"
+				viewBox="0 0 250 250"
+				style="fill: var(--github-fill); color: var(--github-color); position: absolute; top: 0; border: 0; right: 0"
+				aria-hidden="true"
+			>
+				<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+				<path
+					d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+					fill="currentColor"
+					style="transform-origin: 130px 106px"
+					class="octo-arm"
+				></path>
+				<path
+					d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+					fill="currentColor"
+					class="octo-body"
+				></path>
+			</svg>
+		</a>
+	</div>
 </html>
